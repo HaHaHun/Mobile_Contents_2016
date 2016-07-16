@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kjhoo.simple_lockscreen">
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ConfigActivity"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".settingalarm"/>
+        <service android:name=".ScreenService" />
+        <service android:name=".ScreenService2"/>
+        <receiver android:name=".ScreenReceiver"/>
+        <activity android:name=".selectmusic"/>
+        <activity android:name=".AlarmSount"/>
+
+    </application>
+
+</manifest>
