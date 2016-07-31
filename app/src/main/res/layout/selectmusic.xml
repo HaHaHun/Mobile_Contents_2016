@@ -10,63 +10,120 @@ android:orientation="vertical">
     android:layout_height="0dp"
     android:layout_weight="2"
     android:orientation="horizontal"
+    android:background="#1a237e"
     >
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/goback2"/>
+        android:layout_height="match_parent"
+        android:id="@+id/goback2"
+        android:background="@drawable/goback"/>
 
 </LinearLayout>
-
-<TextView
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="1dp"
-    android:text="진동"
-    android:textSize="20dp"
     android:layout_weight="2"
+    android:gravity="center">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:text="[노래 선택]"
+    android:fontFamily="sans-serif-light"
+    android:textSize="40dp"
+    android:textColor="#000000"
     android:id="@+id/vibration"/>
-    <TextView
+</LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:text="노래"
         android:layout_weight="1"
-        android:textSize="15dp"
-        android:textColor="#ffffff"
-        android:background="#3355ff"/>
+        android:background="#1a237e"
+        android:gravity="center"
+        >
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="노래"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        />
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="3">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Music1"
         android:textSize="20dp"
-        android:layout_weight="2"
-        android:id="@+id/music1"/>
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-light"
+        android:id="@+id/music1"
+        android:gravity="center"
+        android:textColor="#000000"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#999999" />
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Music2"
         android:textSize="20dp"
-        android:layout_weight="2"
-        android:id="@+id/music2"/>
+        android:fontFamily="sans-serif-light"
+        android:layout_weight="1"
+        android:id="@+id/music2"
+        android:gravity="center"
+        android:textColor="#000000"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#999999" />
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Music3"
         android:textSize="20dp"
-        android:layout_weight="2"
-        android:id="@+id/music3"/>
-    <TextView
+        android:fontFamily="sans-serif-light"
+        android:layout_weight="1"
+        android:id="@+id/music3"
+        android:gravity="center"
+        android:textColor="#000000"/>
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="#1a237e"
+        android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="기본 알람음"
-        android:textSize="15dp"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-light"
         android:textColor="#ffffff"
-        android:background="#3355ff"
-        android:layout_weight="1"/>
+
+        />
+
+    </LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:text="기본 알람"
+        android:text="기본 알람1"
         android:textSize="20dp"
+        android:fontFamily="sans-serif-light"
         android:layout_weight="2"
-        android:id="@+id/base_music"/>
+        android:gravity="center"
+        android:id="@+id/base_music"
+        android:textColor="#000000"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999999" />
 </LinearLayout>

@@ -67,7 +67,7 @@ public class selectmusic extends Activity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(selectmusic.this, "Music3 선택", Toast.LENGTH_SHORT).show();
-                Prefs.with(selectmusic.this).write("music_uri", "test1.ogg");
+                Prefs.with(selectmusic.this).write("music_uri","music3.mp3");
                 Prefs.with(selectmusic.this).write("true","Music3");
                 setResult(RESULT_OK);
                 finish();
